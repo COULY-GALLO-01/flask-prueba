@@ -8,6 +8,12 @@ app=Flask(__name__)
 def principal():
     
     return render_template('test.html')#aca poner link a archivos front end, como la ruta esta en "/" es lo primero que vemos, todo en la carpeta templates, asi es el programa
+
+@app.route('/starter')
+def start():
+    
+    return render_template('father.html')#aca poner link a archivos front end, como la ruta esta en "/" es lo primero que vemos, todo en la carpeta templates, asi es el programa
+
 @app.route('/son')
 def son():
     
